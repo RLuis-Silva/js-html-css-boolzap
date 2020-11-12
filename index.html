@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./stye.css">
     <!-- link cdn FONTAWSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- link Vue development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Boolzapp</title>
 </head>
 <body>
@@ -15,9 +17,9 @@
         <!-- parte di sx -->
         <aside>
             <section class="aside_up">
-                <div class="contatto"> 
-                    <img src="./img/avatar_1.jpg" alt="foto_avatar">
-                    <h4>nome utente</h4>
+                <div class="contatto" v-if="user"> 
+                    <img :src="./img/avatar_+{{user.avatar}}+.jpg" alt="foto_avatar">
+                    <h4>{{user.name}}</h4>
                 </div>  
                 <div class="icone">
                     <i class="fas fa-circle-notch"></i>
@@ -37,18 +39,11 @@
                 <input type="text" placeholder=" Cerca o inizia una nuova chat">
             </section>
             <section class="lista_contatti">
-                <div class="contatto">
+                <div class="contatto" v-for="contact in contacts">
                     <img src="./img/avatar_1.jpg" alt="foto_avatar">
-                    <h4>nome utente</h4>
+                    <h4>{{contact.name}}</h4>
                 </div>
-                <div class="contatto">
-                    <img src="./img/avatar_1.jpg" alt="foto_avatar">
-                    <h4>nome utente</h4>
-                </div>
-                <div class="contatto">
-                    <img src="./img/avatar_1.jpg" alt="foto_avatar">
-                    <h4>nome utente</h4>
-                </div>
+                
                 
             </section>
         </aside>
@@ -59,7 +54,7 @@
                 <div class="contatto">
                     <img src="./img/avatar_1.jpg" alt="foto_avatar">
                     <div>
-                        <h4>nome utente</h4>
+                        <h4>{{contacts[0].name}}</h4>
                         <h6>Ultimo accesso oggi alle 10.35</h6>
                     </div>    
                 <div>
@@ -87,5 +82,8 @@
             </section>
         </main>
     </div>
+
+    <!-- link js -->
+    <link rel="stylesheet" href="./main.js">
 </body>
 </html>
