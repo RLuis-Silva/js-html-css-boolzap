@@ -16,6 +16,14 @@ body{
 }
 
 
+/* UTILITIES */
+img{
+    width: 40px;
+    border-radius: 100%;
+}
+
+
+/* LAYOUT */
 .container{
     display: flex;   
     width: 1500px;
@@ -32,11 +40,32 @@ aside{
 
 }
 
-aside .aside_nome{
+aside .aside_up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-basis: 7%;
     background-color: green;
     padding: 10px;
 }
+
+aside .aside_up .utente{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+aside .aside_up .utente img{
+    margin-right: 10px;
+}
+
+aside .aside_up .icone {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    flex-basis: 70px;
+}
+
 
 aside .notifiche{
     flex-basis: 7%;
