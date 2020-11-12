@@ -22,6 +22,10 @@ img{
     border-radius: 100%;
 }
 
+i{
+    color: #b1b1b1;
+}
+
 
 /* LAYOUT */
 .container{
@@ -31,7 +35,7 @@ img{
     height: 90%;
 }
 
-/* ASIDE */
+/* ASIDE/ASIDE_UP */
 aside{
     display: flex;
     flex-direction: column;
@@ -45,14 +49,14 @@ aside .aside_up{
     justify-content: space-between;
     align-items: center;
     flex-basis: 7%;
-    background-color: green;
+    background-color: #eaeaea;
     padding: 10px;
 }
 
 aside .aside_up .utente{
     display: flex;
     align-items: center;
-    background-color: grey;
+    /* background-color: grey; debug */
 }
 
 aside .aside_up .utente img{
@@ -62,28 +66,76 @@ aside .aside_up .utente img{
 aside .aside_up .icone {
     display: flex;
     justify-content: space-between;
-    background-color: grey;
     flex-basis: 70px;
+    /* background-color: grey;  debug */
+    margin-right: 10px;
 }
 
 
+
+/* ASIDE/NOTIFICHE */
 aside .notifiche{
+    display: flex;
+    align-items: center;
     flex-basis: 7%;
-    background-color: grey;
+    background-color: #74dcff;
     padding: 10px;
 }
 
+aside .notifiche i{
+    background-color: white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+
+aside .notifiche .warning{
+    /* background-color: lightblue; debug */
+    margin-left: 20px;
+}
+
+aside .notifiche .warning a{
+    color: #44798b;
+}
+
+
+
+/* ASIDE/BAR_RICERCA */
 aside .bar_ricerca{
     flex-basis: 5%;
-    background-color: lightblue;
+    background-color: #f5f5f5;
     padding: 10px;
+    
 }
 
+aside .bar_ricerca input{
+    width: 95%;
+    padding: 5px;
+}
+
+
+/* ASIDE/LISTA_CONTATTI */
 aside .lista_contatti{
     flex-grow: 1;
     background-color: white;
     padding: 10px;
 }
+
+aside .lista_contatti .contatto{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+aside .lista_contatti .contatto img{
+    margin-right: 10px;
+}
+
+
+
+/* MAIN */
 
 main{
     flex-basis: 70%;
