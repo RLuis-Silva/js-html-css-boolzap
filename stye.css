@@ -26,6 +26,22 @@ i{
     color: #b1b1b1;
 }
 
+.icone {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 70px;
+    background-color: pink;  
+    margin-right: 10px;
+}
+
+.contatto{
+    display: flex;
+    align-items: center;
+}
+.contatto img{
+    margin-right: 10px;
+}
+
 
 /* LAYOUT */
 .container{
@@ -53,23 +69,17 @@ aside .aside_up{
     padding: 10px;
 }
 
-aside .aside_up .utente{
+/* aside .aside_up .utente{
     display: flex;
-    align-items: center;
+    align-items: center; */
     /* background-color: grey; debug */
-}
+/* } */
 
-aside .aside_up .utente img{
+/* aside .aside_up .utente img{
     margin-right: 10px;
-}
+} */
 
-aside .aside_up .icone {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 70px;
-    /* background-color: grey;  debug */
-    margin-right: 10px;
-}
+
 
 
 
@@ -123,15 +133,13 @@ aside .lista_contatti{
 }
 
 aside .lista_contatti .contatto{
-    display: flex;
-    align-items: center;
     padding-left: 5px;
     margin-bottom: 15px;
 }
 
-aside .lista_contatti .contatto img{
+/* aside .lista_contatti .contatto img{
     margin-right: 10px;
-}
+} */
 
 
 
@@ -150,8 +158,10 @@ main{
 }
 
 main .main_up{
+    display: flex;
+    justify-content: space-between;
     flex-basis: 7%;
-    background-color: grey;
+    background-color: #eaeaea;
     padding: 10px;
 }
 
@@ -159,8 +169,34 @@ main .main_center{
     flex-grow: 1;
 }
 
+
+
+
+
+/* MAIN/MAIND_DOWN */
 main .main_down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-basis: 8%;
-    background-color: grey;
+    background-color: #f4eeea;
     padding: 10px;
+}
+
+main .main_down .faccina {
+    /* background-color: pink; */
+    margin-left: 50px;
+    color: #788183;
+}
+
+main .main_down .scrivi input{
+    width:900px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+main .main_down .mic {
+    /* background-color: pink; */
+    margin-right: 30px;
+    color: #788183;
 }
