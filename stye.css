@@ -23,12 +23,63 @@ body{
     height: 90%;
 }
 
+/* ASIDE */
 aside{
+    display: flex;
+    flex-direction: column;
     flex-basis: 30%;
     background-color: pink;
+
+}
+
+aside .aside_nome{
+    flex-basis: 7%;
+    background-color: green;
+    padding: 10px;
+}
+
+aside .notifiche{
+    flex-basis: 7%;
+    background-color: grey;
+    padding: 10px;
+}
+
+aside .bar_ricerca{
+    flex-basis: 5%;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+aside .lista_contatti{
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px;
 }
 
 main{
     flex-basis: 70%;
     background-color: orange;
+}
+
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main .main_up{
+    flex-basis: 7%;
+    background-color: grey;
+    padding: 10px;
+}
+
+main .main_center{
+    flex-grow: 1;
+}
+
+main .main_down{
+    flex-basis: 8%;
+    background-color: grey;
+    padding: 10px;
 }
