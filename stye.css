@@ -29,8 +29,7 @@ i{
 .icone {
     display: flex;
     justify-content: space-between;
-    flex-basis: 70px;
-    background-color: pink;  
+    flex-basis: 70px; 
     margin-right: 10px;
 }
 
@@ -151,7 +150,7 @@ main{
 }
 
 
-/* MAIN */
+/* MAIN/MAIN_UP */
 main{
     display: flex;
     flex-direction: column;
@@ -161,6 +160,8 @@ main .main_up{
     display: flex;
     justify-content: space-between;
     flex-basis: 7%;
+    align-items: center;
+    background-color: lightblue;
     background-color: #eaeaea;
     padding: 10px;
 }
