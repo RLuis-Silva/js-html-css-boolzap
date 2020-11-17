@@ -41,6 +41,38 @@ i{
     margin-right: 10px;
 }
 
+.active{
+    background-color: grey;
+}
+
+.messaggio {   
+    position: relative;
+    max-width: 300px;
+    min-height: 55px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+}
+
+.sent {
+    position: relative;
+    left: 60%;
+    background-color: #d4efc1;
+}
+
+.received{
+    background-color: #e8edea;
+}
+
+.tempo-msg{
+    font-size: 14px;
+    /* align-items: flex-end; */
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+}
+
 
 /* LAYOUT */
 .container{

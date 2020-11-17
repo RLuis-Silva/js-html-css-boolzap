@@ -94,7 +94,15 @@ var app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+
+        // creo una variabile (che fa da indice) 0 perchè la prima posizione
+        contattoAttivo: 0
     },
-    methods: {}
+    methods: {
+        setContattoAttivo(index){
+            console.log(index);
+            this.contattoAttivo = index;
+        }
+    }
 });
