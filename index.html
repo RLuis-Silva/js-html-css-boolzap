@@ -106,7 +106,11 @@
                     <i class="fas fa-smile"></i>
                 </div>
                 <div class="scrivi">
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" 
+                        placeholder="Scrivi un messaggio"
+                        v-model="nuovoMessaggio"
+                        @keyup.enter="invioMessaggio"
+                    >
                 </div>
                 <div class="mic">
                     <i class="fas fa-microphone"></i>
@@ -116,6 +120,8 @@
     </div>
 
     <!-- link js -->
+    <!-- day.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

@@ -97,12 +97,37 @@ var app = new Vue({
         ],
 
         // creo una variabile (che fa da indice) 0 perchè la prima posizione
-        contattoAttivo: 0
+        contattoAttivo: 0,
+        nuovoMessaggio: ''
     },
     methods: {
         setContattoAttivo(index){
             console.log(index);
             this.contattoAttivo = index;
+        },
+    
+        invioMessaggio(){
+            console.log(this.nuovoMessaggio);
+            if(this.nuovoMessaggio.trim() !== ""){
+                
+                this.contacts[this.contattoAttivo].messages.push({
+                    date: dayjs().format("DD/MM/YYYY HH:mm"),
+                    message: this.nuovoMessaggio,
+                    status: 'sent'
+                });
+
+                // pulisce input chat
+                this.nuovoMessaggio = "";
+
+                // messaggio di risposta automatico
+                setTimeout( () => {
+                    this.contacts[this.contattoAttivo].messages.push({
+                        date: dayjs().format("DD/MM/YYYY HH:mm"),
+                        message: "ok",
+                        status: 'received'
+                    });
+                }, 1000);
+            }
         }
     }
 });
