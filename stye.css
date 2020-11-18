@@ -173,6 +173,7 @@ aside .bar_ricerca{
 }
 aside .bar_ricerca i{
     margin-top: 5px;
+    cursor: pointer;
 }
 aside .bar_ricerca input{
     width: 95%;
@@ -256,6 +257,7 @@ main .main_down .faccina {
     margin-left: 50px;
     margin-right: 30px;
     color: #788183;
+    cursor: pointer;
 }
 
 main .main_down .scrivi input{
@@ -270,4 +272,5 @@ main .main_down .mic {
     margin-right: 30px;
     margin-left: 30px;
     color: #788183;
+    cursor: pointer;
 }
