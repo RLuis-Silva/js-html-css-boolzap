@@ -42,7 +42,9 @@ i{
 }
 
 .active{
-    background-color: grey;
+    background-color: lightgrey;
+    width: 100%;
+    height: 70px;
 }
 
 .messaggio {   
@@ -123,11 +125,26 @@ aside .notifiche{
     padding: 10px;
 }
 
-aside .notifiche i{
+/* aside .notifiche i{
     background-color: white;
     border-radius: 100%;
     height: 30px;
     width: 30px;
+} */
+
+aside .notifiche .iconaCampanella {
+    position: relative;
+    background-color: white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+aside .notifiche .iconaCampanella i{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
@@ -160,11 +177,12 @@ aside .bar_ricerca input{
 aside .lista_contatti{
     flex-grow: 1;
     background-color: white;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 aside .lista_contatti .contatto{
     padding-left: 5px;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -227,6 +245,7 @@ main .main_down .scrivi input{
     width:900px;
     height: 40px;
     border-radius: 10px;
+    padding: 10px;
 }
 
 main .main_down .mic {
