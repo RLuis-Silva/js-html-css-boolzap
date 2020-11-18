@@ -180,6 +180,7 @@ aside .lista_contatti{
     flex-grow: 1;
     background-color: white;
     padding-top: 10px;
+    overflow-y: auto;
 }
 
 aside .lista_contatti .contatto{
@@ -222,6 +223,7 @@ main .main_up{
 main .main_center{
     flex-grow: 1;
     background-image: url(./img/mine.jpg);
+    overflow-y: auto;
 }
 
 
