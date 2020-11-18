@@ -164,14 +164,18 @@ aside .notifiche .warning a{
 /* ASIDE/BAR_RICERCA */
 aside .bar_ricerca{
     flex-basis: 5%;
+    display: flex;
     background-color: #f5f5f5;
     padding: 10px;
     
 }
-
+aside .bar_ricerca i{
+    margin-top: 5px;
+}
 aside .bar_ricerca input{
     width: 95%;
     padding: 5px;
+    margin-left: 5px;
 }
 
 
@@ -179,7 +183,6 @@ aside .bar_ricerca input{
 aside .lista_contatti{
     flex-grow: 1;
     background-color: white;
-    padding-top: 10px;
     overflow-y: auto;
 }
 
