@@ -70,7 +70,7 @@ i{
 
 .tempo-msg{
     font-size: 14px;
-    /* align-items: flex-end; */
+    color: #2c2b30;
     position: absolute;
     right: 5px;
     bottom: 6px;
