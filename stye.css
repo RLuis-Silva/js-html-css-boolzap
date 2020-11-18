@@ -31,6 +31,7 @@ i{
     justify-content: space-between;
     flex-basis: 70px; 
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .contatto{
@@ -136,8 +137,8 @@ aside .notifiche .iconaCampanella {
     position: relative;
     background-color: white;
     border-radius: 100%;
-    height: 30px;
-    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
 }
 
 aside .notifiche .iconaCampanella i{
@@ -145,6 +146,7 @@ aside .notifiche .iconaCampanella i{
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 
@@ -184,6 +186,7 @@ aside .lista_contatti .contatto{
     padding-left: 5px;
     margin-top: 10px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 /* aside .lista_contatti .contatto img{
@@ -238,6 +241,7 @@ main .main_down{
 main .main_down .faccina {
     /* background-color: pink; */
     margin-left: 50px;
+    margin-right: 30px;
     color: #788183;
 }
 
@@ -251,5 +255,6 @@ main .main_down .scrivi input{
 main .main_down .mic {
     /* background-color: pink; */
     margin-right: 30px;
+    margin-left: 30px;
     color: #788183;
 }
